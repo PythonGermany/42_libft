@@ -69,7 +69,7 @@ bonus : $(OBJECT_BONUS)
 	cc -c -Wall -Wextra -Werror $^
 
 clean :
-	rm -f *.o
+	rm -f $(OBJECT) $(OBJECT_BONUS)
 
 fclean : clean
 	rm -f $(NAME)
