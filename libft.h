@@ -6,7 +6,7 @@
 /*   By: rburgsta <rburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:33:24 by rburgsta          #+#    #+#             */
-/*   Updated: 2023/01/05 08:12:55 by rburgsta         ###   ########.fr       */
+/*   Updated: 2023/01/05 08:17:59 by rburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,7 +163,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
  * @param[in] s The memory area to be searched
  * @param[in] c The character that will be searched for
  * @param[in] n The number of bytes that will be searched
- * @return Pointer to the first matching byte or NULL if the character does 
+ * @return Pointer to the first matching byte or 0 if the character does 
  * not occur in the given memory area
  */
 void	*ft_memchr(const void *s, int c, size_t n);
@@ -174,7 +174,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
  * @param[in] s2 The second memory area
  * @param[in] n The number of bytes to be compared
  * @return The difference of the first not matching pair of characters 
- * or NULL if the memory areas match
+ * or 0 if the memory areas match
  */
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
